@@ -1,0 +1,23 @@
+
+- CREATE VIRTUAL ENV
+    -virtualenv venv (venv is the name)
+    -source venv/bin/activate (to activate it)
+
+- Create a requirement.txt file to all the packages into it
+    -pip install -r requirements.txt (to install of packages)
+- Create a config.py file to Set Up AWS Credentials
+- Create a controller.py file to include all the CRUD operations and it will import all the AWS configurations
+
+- Create a app.py file to create ROUTES
+- Run the file in virtual enviornment
+    -python app.py
+
+
+- Connect link to the postman to see the json data of CRUD Operations
+- Created Frontend using html and css
+- Pushed All the files on github
+
+
+
+
+sudo docker run -it --name new_cont0 -p 5000:5000 -e AWS_ACCESS_KEY_ID=AKIATKZGS7UHGXKLQLGW -e AWS_SECRET_ACCESS_KEY=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 -e AWS_DEFAULT_REGION=us-east-1 project
