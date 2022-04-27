@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<!-- <script>
+    clickFun() {
+        window.location = '/create';
+ </script> -->
+ <!-- <link rel="stylesheet" href="../css/script.css"> -->
+
+ <link rel="stylesheet"type=text/css href="{{ url_for('static', filename='script.css') }}">
+ <!-- <link rel="stylesheet"type=text/css href="css/script.css"> -->
+ 
+
+<body>
+
+<center><h1>Welcome to DynamoDb </h1>
+    <marquee  behavior="scroll" direction="left"> <img src="https://www.pngkey.com/png/full/246-2467352_aws-dynamodb-logo-png-transparent-aws-dynamodb-logo.png">  </marquee>  
+<p>Lets Start</p>
+<button type="button" ><a href = "/create">Click Me To Create Table!</a></button>
+
+<p>To add entries in already created table :</p>
+<button type="button" ><a href = "/createentry">Click Me! </a></button>
+<p>To delete table:</p>
+<button type="button"><a href="/books/delete">Click Me!</button>
+</center>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        var a = document.getElementById("id");
+        console.log(a)
+    </script>
+    <link rel="stylesheet"type=text/css href="{{ url_for('static', filename='script.css') }}">
+    
+<body>
+<center>
+<h1> Added Sccessfully </h1>
+
+<p>To add entries again :</p>
+<button type="button" ><a href = "/createentry">Click Me! </a></button>
+<p>To read any data :</p>
+
+<form action = "/read" method="post"> 
+    <label for="id">ID:</label><br><br>
+    <input type="number" id="id" name="id" value=""><br><br>
+    <input type="submit" value="Click ME!" />
+    
+</form>
+
+<p>To delete any data :</p>
+
+<form action="/delete" method="post"> 
+    <label for="id">ID:</label><br><br>
+    <input type="number" id="id" name="id" value=""><br><br>
+    <input type="submit" value="Click ME!" />
+</form>
+
+<p>To Update the Data:</p>
+<form action="/update" method="post"> 
+    
+    <input type="submit" value="Click ME!" />
+</form>
+
+
+
+</center>    
+
+
+</body>
+</html>
